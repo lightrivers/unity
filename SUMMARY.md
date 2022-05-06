@@ -7,4 +7,4 @@
 
 ## Camera
 
-* [Camera Controller](<README (1).md>)
+* [Camera Controller](README.md)
