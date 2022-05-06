@@ -8,6 +8,7 @@
 
 
 ```
+using UnityEngine;
 public class Gamemanager : MonoBehaviour
 {
     void Start()
@@ -22,6 +23,7 @@ public class Gamemanager : MonoBehaviour
 要提供良好的用户体验，建议仅支持由用户操作（例如按下按钮）来锁定或限制光标。
 
 ```
+using UnityEngine;
     void OnGUI()
     {
         //Press this button to lock the Cursor
