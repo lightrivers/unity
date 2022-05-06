@@ -1,8 +1,10 @@
 # Table of contents
 
-* [Camera Controller](README.md)
+## Game Manager
 
-## Group 1
+* [Untitled](README.md)
+* [Page 2](game-manager/page-2.md)
 
-* [Untitled](group-1/untitled.md)
-* [Page 2](group-1/page-2.md)
+## Camera
+
+* [Camera Controller](camera/camera-controller.md)
