@@ -19,6 +19,13 @@
 
 
 ```
+    public float moveSpeed;
+    public CharacterController charCon;
+
+    public Transform camTransform;
+    public float mouseSensitivity;
+
+    private Vector3 moveInput;
 void Update()
 {
     //moveInput.x = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
