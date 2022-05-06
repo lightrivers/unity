@@ -2,9 +2,17 @@
 
 ## Game Manager
 
-* [Cursor](README.md)
-* [Page 2](group-1/page-2.md)
+* [Page 2](README.md)
 
 ## Camera
 
 * [Camera Controller](<README (1).md>)
+
+## Player Controller
+
+* [Move](player-controller/move.md)
+
+## GUI
+
+* [GUI.Button](gui/gui.button.md)
+* [Cursor](gui/cursor.md)
