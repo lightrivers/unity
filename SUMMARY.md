@@ -4,5 +4,5 @@
 
 ## Group 1
 
-* [Page 1](group-1/page-1.md)
+* [Untitled](group-1/untitled.md)
 * [Page 2](group-1/page-2.md)
