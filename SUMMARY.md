@@ -2,9 +2,9 @@
 
 ## Game Manager
 
-* [Untitled](README.md)
-* [Page 2](game-manager/page-2.md)
+* [Cursor](README.md)
+* [Page 2](group-1/page-2.md)
 
 ## Camera
 
-* [Camera Controller](camera/camera-controller.md)
+* [Camera Controller](<README (1).md>)
