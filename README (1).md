@@ -7,6 +7,7 @@
 ![Camera Point](.gitbook/assets/Unity\_MuKhcXoNWy.png)
 
 ```
+using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public Transform target;
