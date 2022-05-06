@@ -38,3 +38,26 @@ public class Gamemanager : MonoBehaviour
 ```
 
 参考资料：[https://docs.unity.cn/cn/2021.3/ScriptReference/Cursor-lockState.html](https://docs.unity.cn/cn/2021.3/ScriptReference/Cursor-lockState.html)
+
+## [Cursor](https://docs.unity.cn/cn/2021.3/ScriptReference/Cursor.html).visible
+
+
+
+确定硬件指针是否可见。
+
+将此属性设置为 true 可显示光标。设置为 false 可隐藏光标。请注意，在 [CursorLockMode.Locked](https://docs.unity.cn/cn/2021.3/ScriptReference/CursorLockMode.Locked.html) 模式下，无论此属性的值如何，光标始终不可见。
+
+```
+using UnityEngine;
+using System.Collections;public class CursorScript : MonoBehaviour
+{
+    // Use this for initialization
+    void Start()
+    {
+        //Set Cursor to not be visible
+        Cursor.visible = false;
+    }
+}
+```
+
+参考资料：[https://docs.unity.cn/cn/2021.3/ScriptReference/Cursor-visible.html](https://docs.unity.cn/cn/2021.3/ScriptReference/Cursor-visible.html)
