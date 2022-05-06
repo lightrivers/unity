@@ -25,7 +25,8 @@ public static bool Button ([Rect](https://docs.unity.cn/cn/2021.3/ScriptReferenc
 // And print a message when they got clicked.using UnityEngine;
 using System.Collections;public class ExampleClass : MonoBehaviour
 {
-    public Texture btnTexture;    void OnGUI()
+    public Texture btnTexture;    
+    void OnGUI()
     {
         if (!btnTexture)
         {
@@ -33,7 +34,8 @@ using System.Collections;public class ExampleClass : MonoBehaviour
             return;
         }        
         if (GUI.Button(new Rect(10, 10, 50, 50), btnTexture))
-            Debug.Log("Clicked the button with an image");        
+            Debug.Log("Clicked the button with an image");
+                    
         if (GUI.Button(new Rect(10, 70, 50, 30), "Click"))
             Debug.Log("Clicked the button with text");
     }

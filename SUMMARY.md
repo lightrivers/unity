@@ -15,4 +15,4 @@
 ## GUI
 
 * [GUI.Button](gui/gui.button.md)
-* [Cursor](gui/cursor.md)
+* [Cursor](<README (2).md>)
