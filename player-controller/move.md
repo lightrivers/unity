@@ -36,6 +36,7 @@ void Update()
 
     moveInput = vertMove + horitMove;
     moveInput.Normalize();
+    //Normalize()使向量的值为1
     moveInput = moveInput * moveSpeed;
     
 
