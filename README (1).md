@@ -18,18 +18,3 @@ public class CameraController : MonoBehaviour
     }
 }
 ```
-
-第一人称视角下，通过鼠标操控Camera的旋转
-
-```
-public Transform camTransform;
-void Update()
-{
-    //control camera rotation
-    Vector2 mouseInput = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y")) * mouseSensitivity;
-
-    transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + mouseInput.x, transform.rotation.eulerAngles.z);
-
-    camTransform.rotation = Quaternion.Euler(camTransform.rotation.eulerAngles + new Vector3(-mouseInput.y, 0f, 0f));
-}
-```

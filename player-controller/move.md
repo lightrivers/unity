@@ -21,10 +21,7 @@
 ```
     public float moveSpeed;
     public CharacterController charCon;
-
-    public Transform camTransform;
     public float mouseSensitivity;
-
     private Vector3 moveInput;
 void Update()
 {
@@ -37,17 +34,8 @@ void Update()
     moveInput = vertMove + horitMove;
     moveInput.Normalize();
     //Normalize()使向量的值为1
-    moveInput = moveInput * moveSpeed;
-    
-
+    moveInput = moveInput * moveSpeed;  
     charCon.Move(moveInput * Time.deltaTime);
-    
-    //control camera rotation
-    Vector2 mouseInput = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y")) * mouseSensitivity;
-
-    transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + mouseInput.x, transform.rotation.eulerAngles.z);
-
-    camTransform.rotation = Quaternion.Euler(camTransform.rotation.eulerAngles + new Vector3(-mouseInput.y, 0f, 0f));
 
 }
 ```
