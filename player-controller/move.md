@@ -16,8 +16,6 @@
 
 **注意：**水平范围和垂直范围从 0 变为 +1 或 -1，以 0.05f 的步幅增加/减少。[GetAxisRaw](https://docs.unity.cn/cn/2019.4/ScriptReference/Input.GetAxisRaw.html) 立即从 0 变为 1 或 -1，因此没有步幅。
 
-
-
 ```
     public float moveSpeed;
     public CharacterController charCon;
@@ -25,6 +23,8 @@
     private Vector3 moveInput;
 void Update()
 {
+    //store y velocity
+    float yStore = moveInput.y;
     //moveInput.x = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
     //moveInput.z = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
 
@@ -34,11 +34,31 @@ void Update()
     moveInput = vertMove + horitMove;
     moveInput.Normalize();
     //Normalize()使向量的值为1
-    moveInput = moveInput * moveSpeed;  
+    moveInput = moveInput * moveSpeed;
+    //重力，由于之前改变了moveInput的值，因此需要用储存y velocity给moveInput.y重新赋值
+    //其实下列代码中，把yStore和moveInput.y的调换一下，结果是一样的，只需要把
+    //yStore = moveInput.y;移动到charCon.Move()之前
+    moveInput.y = yStore;
+    moveInput.y += Physics.gravity.y * Time.deltaTime * gravityModifier;
+
+    if(charCon.isGrounded)//如果在地面上
+    {
+        moveInput.y = Physics.gravity.y * Time.deltaTime * gravityModifier;
+    }
+    if(moveInput.y < -10.0f)//限制下落速度
+    {
+        moveInput.y = -10.0f;
+    }  
     charCon.Move(moveInput * Time.deltaTime);
 
 }
 ```
+
+[重力Gravity](https://app.gitbook.com/s/fhVo0DEhzYbtmuRTLGnE/\~/changes/btjXR1vJ6SLzKvZ3VZRl/game-manager/zhong-li-gravity)
+
+{% content-ref url="../" %}
+[..](../)
+{% endcontent-ref %}
 
 ## Quaternion
 

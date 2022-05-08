@@ -2,11 +2,11 @@
 
 ## Game Manager
 
-* [Page 2](README.md)
+* [重力Gravity](README.md)
 
 ## Camera
 
-* [第一人称视角](camera/di-yi-ren-cheng-shi-jiao.md)
+* [第一人称视角](<README (1).md>)
 * [Transform.eulerAngles与transform.rotation](camera/transform.eulerangles-yu-transform.rotation.md)
 
 ## Player Controller

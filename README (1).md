@@ -4,7 +4,7 @@
 
 因此，可以把MainCamera拖到Player下；或者，在Player下创建一个名为”CameraPoint“的子物体移动其至头部（记得调整好下x,y,z轴的朝向），然后用下列脚本绑定MainCamera与CameraPoint。通过这种方式，可以更灵活地调用MainCamera。
 
-![Camera Point](../.gitbook/assets/Unity\_MuKhcXoNWy.png)
+![Camera Point](.gitbook/assets/Unity\_MuKhcXoNWy.png)
 
 ```
 using UnityEngine;
@@ -37,8 +37,8 @@ void Update()
 }
 ```
 
-{% content-ref url="transform.eulerangles-yu-transform.rotation.md" %}
-[transform.eulerangles-yu-transform.rotation.md](transform.eulerangles-yu-transform.rotation.md)
+{% content-ref url="camera/transform.eulerangles-yu-transform.rotation.md" %}
+[transform.eulerangles-yu-transform.rotation.md](camera/transform.eulerangles-yu-transform.rotation.md)
 {% endcontent-ref %}
 
 上述逻辑利用了欧拉角函数，而下面则会利用四元数，展示以上逻辑的另一种写法
@@ -56,4 +56,8 @@ void Update()
 }
 ```
 
-如果 [人物碰撞到物体后](https://app.gitbook.com/s/fhVo0DEhzYbtmuRTLGnE/\~/changes/oToq09ZSnKhgUpagBaut/player-controller/ren-wu-peng-zhuang-dao-wu-ti-hou-dou-dong)
+如果人物碰撞到物体后抖动，查看下列文章
+
+{% content-ref url="player-controller/ren-wu-peng-zhuang-dao-wu-ti-hou-dou-dong.md" %}
+[ren-wu-peng-zhuang-dao-wu-ti-hou-dou-dong.md](player-controller/ren-wu-peng-zhuang-dao-wu-ti-hou-dou-dong.md)
+{% endcontent-ref %}
