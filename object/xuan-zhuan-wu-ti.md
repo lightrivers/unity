@@ -28,4 +28,17 @@ rotation方法是：旋转到某个角度，就是是在update中每帧都执行
 
 **总结：**
 
-比如你只想让他旋转到多少,用rotation; 假如想让他一直转,可以用Rotate
+比如你只想让他旋转到多少,用rotation; 假如想让他一直转,可以用Rotate。
+
+
+
+附上一个旋转金币的实例：
+
+```
+Vector3 turncoin;
+void Update()
+{
+    turncoin = new Vector3(45f, 0, 0);
+    transform.Rotate(turncoin * Time.deltaTime);
+}
+```
