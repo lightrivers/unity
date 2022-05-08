@@ -2,17 +2,16 @@
 
 ## Game Manager
 
-* [重力Gravity](README.md)
-
 ## Camera
 
-* [第一人称视角](<README (1).md>)
+* [第一人称视角](README.md)
 * [Transform.eulerAngles与transform.rotation](camera/transform.eulerangles-yu-transform.rotation.md)
 
 ## Player Controller
 
 * [Move](player-controller/move.md)
 * [人物碰撞到物体后抖动](player-controller/ren-wu-peng-zhuang-dao-wu-ti-hou-dou-dong.md)
+* [重力Gravity](player-controller/zhong-li-gravity.md)
 
 ## GUI
 

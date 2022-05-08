@@ -56,8 +56,8 @@ void Update()
 
 [重力Gravity](https://app.gitbook.com/s/fhVo0DEhzYbtmuRTLGnE/\~/changes/btjXR1vJ6SLzKvZ3VZRl/game-manager/zhong-li-gravity)
 
-{% content-ref url="../" %}
-[..](../)
+{% content-ref url="zhong-li-gravity.md" %}
+[zhong-li-gravity.md](zhong-li-gravity.md)
 {% endcontent-ref %}
 
 ## Quaternion
