@@ -7,6 +7,7 @@
 ## Camera
 
 * [Camera Controller](<README (1).md>)
+* [Transform.eulerAngles与transform.rotation](camera/transform.eulerangles-yu-transform.rotation.md)
 
 ## Player Controller
 
