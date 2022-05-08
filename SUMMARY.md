@@ -20,4 +20,6 @@
 
 ## Object
 
+* [GetComponent](object/getcomponent.md)
+* [射击](object/she-ji.md)
 * [旋转物体](object/xuan-zhuan-wu-ti.md)
